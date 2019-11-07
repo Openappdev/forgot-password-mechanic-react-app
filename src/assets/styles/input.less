@@ -1,0 +1,25 @@
+#input {
+    &.container {
+        width: 100%;
+        overflow: auto;
+
+        label {
+            font-size: 14px;
+            font-weight: bolder;
+            color: #655f5f;
+            margin-right: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 500px) {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
