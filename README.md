@@ -49,21 +49,21 @@ The app is ready to be deployed!
 
 #### Development
 
-#####[ReactJs](https://reactjs.org/)
+##### [ReactJs](https://reactjs.org/)
 
-#####[JSX](https://reactjs.org/docs/introducing-jsx.html) (JavaScript expression)
+##### [JSX](https://reactjs.org/docs/introducing-jsx.html) (JavaScript expression)
 
 #### Testing
 
-#####[Jest](https://jestjs.io/docs/ru/tutorial-react)
+##### [Jest](https://jestjs.io/docs/ru/tutorial-react)
 
-#####[Cypress](https://www.cypress.io/)
+##### [Cypress](https://www.cypress.io/)
 
 #### Code structure (architecture)
 
 The project has been structured in a way to assure a well-folder structure, easy to read, quick understanding of the structure, scalable and easy to maintain in future.<br />
 
-You can notice this aspects trought:
+You can notice this aspects through:
 
 ##### Code flexibility and easy maintenability
 
@@ -75,17 +75,17 @@ Their appearance and labels are customizable.
 
 ###### Components Reusabilty
 
-The shared components in /src/components/shared have been created in reutilisability aspect in mind.
+The shared components in /src/components/shared have been created with reutilisability aspect in mind.
 
 ###### Less coupling more cohesion
 
--   Separation between services and component logic<br />
--   Use of static file containing all the label, text submitted to change in time. They can be changed withoud touching the component logic
+-   Separation between services and components logic<br />
+-   Use of static file containing all the label and text submitted to change in time. They can be changed without touching the component logic
 -   ...
 
 ##### Clean and quality code
 
-You can see that trought the using of:
+You can see that through the using of:
 
 ###### Eslint
 
@@ -94,7 +94,15 @@ Eslint help to quickly find errors at the very begining of the project and fix t
 ###### Clear comments and code indentation
 
 -   Indentation and comments: <br />
-    All the sources files are well indented and some of them have clear comments tags at the lines needed.<br />
+    All the sources files are well indented and some have clear comments tags at the lines needed.<br />
 
 -   Use of helpers and Utils: <br />
-    Blocks of code (in components) have been moved to helpers and utils functions in order to reuse them and reduce component logic lines's codes. Thus, this increase the clearness and quality of the code. At the end, we have component more design oriented than logic/functional, reason I use [JSX](https://reactjs.org/docs/introducing-jsx.html) approach in this project.
+    Blocks of code (in components) have been moved to helpers and utils functions in order to reuse them and reduce component logic lines's codes. Thus, this increase the clearness and quality of the code. At the end, we have more design oriented component than logic/functional, reason why I use [JSX](https://reactjs.org/docs/introducing-jsx.html) approach in this project.
+
+## My configuration
+
+#### Node : v10.16.3
+
+#### Npm : 6.10.3
+
+#### Yarn : 1.16.0
