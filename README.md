@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### `yarn test`
 
-`yarn test` launches the unit tests in the interactive watch mode.<br />
+Launches the unit tests in the interactive watch mode.<br />
 Four unit tests has been written with `jest`.
 
 #### `yarn cypress:open`
@@ -89,7 +89,7 @@ Eslint help to quickly find errors at the very begining of the project and fix t
 -   `Use of helpers and Utils:` <br />
     Blocks of code (in components) have been moved to helpers and utils functions in order to reuse them and reduce component logic lines's codes. Thus, this increase the clearness and quality of the code. At the end, we have more design oriented component than logic/functional, reason why I use [JSX](https://reactjs.org/docs/introducing-jsx.html) approach in this project.
 
-#### Testing core dependencies:
+#### Testing Core:
 
 -   [Jest](https://jestjs.io/docs/ru/tutorial-react)
 
