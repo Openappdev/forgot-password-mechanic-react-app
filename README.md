@@ -1,4 +1,4 @@
-# Forgot Password Mechanic React App
+# Forgot Password Workflow
 
 This project has been developped by [Saad Blakime](https://github.com/Openappdev).
 A single page showing forgot password recovery workflow using [React](https://reactjs.org/).
