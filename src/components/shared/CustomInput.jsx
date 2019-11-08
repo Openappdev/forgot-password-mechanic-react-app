@@ -10,12 +10,12 @@ class CustomInput extends React.Component {
   }
 
   render() {
-    const { value, label, name, handleChange } = this.props;
+    const { value, label, name, type, handleChange } = this.props;
     return (
       <div id="input" className="container">
         <label> {label} </label>
         <input
-          type="text"
+          type={type}
           value={value}
           name={name}
           onChange={event => handleChange(event)}
@@ -29,14 +29,16 @@ CustomInput.propTypes = {
   value: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
+  type: PropTypes.string,
   handleChange: PropTypes.func
 };
 
-// Set default props
+// default props
 CustomInput.defaultProps = {
   value: "Title",
   name: "custom_input",
   label: "Label",
+  type: "input",
   handleChange: event => null
 };
 

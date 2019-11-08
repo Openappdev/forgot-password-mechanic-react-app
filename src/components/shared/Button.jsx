@@ -40,7 +40,7 @@ Button.propTypes = {
   handleOnClick: PropTypes.func
 };
 
-// Set default props
+// default props
 Button.defaultProps = {
   type: "button",
   label: "Button",
