@@ -1,16 +1,21 @@
 # Forgot Password Mechanic React App
 
 This project has been developped by [Saad Blakime](https://github.com/Openappdev).
-The panel consists of single page showing forgot password recovery workflow.
+A single page showing forgot password recovery workflow using [React](https://reactjs.org/).
+
+## To run locally
+
+Assuming you have git and node installed, setup is simple:
+
+```
+git clone https://github.com/Openappdev/forgot-password-mechanic-react-app.git
+cd forgot-password-mechanic-react-app
+yarn
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
-
-#### `yarn`
-
-Install all the depandencies along with dev depandences.<br />
-IMPORTANT: Please, not that the installation moment may be a little bit longer due to cypress module installation which is a UI testing tool used in this project to make end to end testing.
 
 #### `yarn start`
 
@@ -21,8 +26,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### `yarn test`
 
-Launches the unit tests in the interactive watch mode.<br />
-Four unit tests has been written.
+`yarn test` launches the unit tests in the interactive watch mode.<br />
+Four unit tests has been written with `jest`.
 
 #### `yarn cypress:open`
 
@@ -44,20 +49,6 @@ The build is minified and the filenames include the hashes.<br />
 The app is ready to be deployed!
 
 ## Approach
-
-### Technologies used
-
-#### Development
-
-##### [ReactJs](https://reactjs.org/)
-
-##### [JSX](https://reactjs.org/docs/introducing-jsx.html) (JavaScript expression)
-
-#### Testing
-
-##### [Jest](https://jestjs.io/docs/ru/tutorial-react)
-
-##### [Cypress](https://www.cypress.io/)
 
 #### Code structure (architecture)
 
@@ -81,7 +72,6 @@ The shared components in /src/components/shared have been created with reutilisa
 
 -   Separation between services and components logic<br />
 -   Use of static file containing all the label and text submitted to change in time. They can be changed without touching the component logic
--   ...
 
 ##### Clean and quality code
 
@@ -93,16 +83,22 @@ Eslint help to quickly find errors at the very begining of the project and fix t
 
 ###### Clear comments and code indentation
 
--   Indentation and comments: <br />
+-   `Indentation and comments:` <br />
     All the sources files are well indented and some have clear comments tags at the lines needed.<br />
 
--   Use of helpers and Utils: <br />
+-   `Use of helpers and Utils:` <br />
     Blocks of code (in components) have been moved to helpers and utils functions in order to reuse them and reduce component logic lines's codes. Thus, this increase the clearness and quality of the code. At the end, we have more design oriented component than logic/functional, reason why I use [JSX](https://reactjs.org/docs/introducing-jsx.html) approach in this project.
 
-## My configuration
+#### Testing core dependencies:
 
-#### Node : v10.16.3
+-   [Jest](https://jestjs.io/docs/ru/tutorial-react)
 
-#### Npm : 6.10.3
+-   [Cypress](https://www.cypress.io/)
 
-#### Yarn : 1.16.0
+## Prerequisites
+
+-   `NodeJS >= 10.16.3`
+-   `npm >= 6.10.3`
+-   `yarn >= 1.16.0`
+-   `jest`
+-   `cypress`
